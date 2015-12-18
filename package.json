@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git@github.com:christopherdro/react-native-calendar.git"
   },
+  "scripts": {
+    "eslint": "eslint ."
+  },
   "files": [
     "CalendarIOS.js",
     "README.md"
@@ -21,6 +24,9 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.3",
     "lodash": ">=3.10.1",
     "moment": ">=2.10.3"
   },
