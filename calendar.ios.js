@@ -76,7 +76,7 @@ const Calendar = React.createClass({
       startDate: moment().format('YYYY-MM-DD'),
       eventDates: [],
       customStyle: {},
-      weekStart: 1,
+      weekStart: 0,
       today: moment(),
     }
   },
@@ -166,7 +166,7 @@ const Calendar = React.createClass({
   },
 
 
-  renderMonthView(argMoment, eventDatesMap) {
+  renderMonthView(argMoment, eventDatesMap, goodAvailability) {
     /*
       In the code bellow. several moments and datatypes are mentioned. To avoid confusion,
       here is the naming convention I used:
@@ -215,7 +215,7 @@ const Calendar = React.createClass({
             caption={`${dayIndex + 1}`}
             isToday={argMonthIsToday && (dayIndex === argDayIndex)}
             isSelected={selectedMonthIsArg && (dayIndex === selectedIndex)}
-            hasEvent={events != null && events[dayIndex] === true}
+            hasEvent={(events != null && events[dayIndex] === true) || goodAvailability}
             usingEvents={this.props.eventDates.length > 0 ? true : false}
             customStyle={this.props.customStyle}
           />
@@ -296,11 +296,11 @@ const Calendar = React.createClass({
             showsHorizontalScrollIndicator={false}
             automaticallyAdjustContentInsets={false}
             onMomentumScrollEnd={(event) => this._scrollEnded(event)}>
-              {calendarDates.map((date) => { return this.renderMonthView(date, eventDatesMap) })}
+              {calendarDates.map((date) => { return this.renderMonthView(date, eventDatesMap, this.props.eventDates[0] == -1) })}
           </ScrollView>
           :
           <View ref='calendar'>
-            {calendarDates.map((date) => { return this.renderMonthView(date, eventDatesMap) })}
+            {calendarDates.map((date) => { return this.renderMonthView(date, eventDatesMap, this.props.eventDates[0] == -1) })}
           </View>
         }
       </View>
