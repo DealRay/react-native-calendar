@@ -13,7 +13,7 @@ const {
 } = React
 
 const
-  DEVICE_WIDTH = 250,
+  DEVICE_WIDTH = 252,
   VIEW_INDEX = 2
 
 function prepareEventDates(eventDates) {
