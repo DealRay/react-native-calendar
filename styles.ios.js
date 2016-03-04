@@ -1,10 +1,12 @@
 const React = require('react-native')
-const DEVICE_WIDTH = React.Dimensions.get('window').width
+const DEVICE_WIDTH = 250
 
 
 module.exports = React.StyleSheet.create({
   calendarContainer: {
-    backgroundColor: '#f7f7f7',
+    backgroundColor: '#fff',
+    width: DEVICE_WIDTH,
+    marginLeft: 20
   },
   monthContainer: {
     width: DEVICE_WIDTH
@@ -12,6 +14,7 @@ module.exports = React.StyleSheet.create({
   calendarControls: {
     flex: 1,
     flexDirection: 'row',
+    width: DEVICE_WIDTH
     // margin: 10,
   },
   controlButton: {
@@ -24,7 +27,7 @@ module.exports = React.StyleSheet.create({
     flex: 1,
     textAlign: 'center',
     fontSize: 15,
-    margin: 15,
+    margin: 5,
   },
   calendarHeading: {
     flexDirection: 'row',
@@ -35,13 +38,15 @@ module.exports = React.StyleSheet.create({
     flex: 1,
     fontSize: 15,
     textAlign: 'center',
-    paddingVertical: 5
+    padding: 5,
+    width: DEVICE_WIDTH / 7,
   },
   weekendHeading: {
     flex: 1,
     fontSize: 15,
     textAlign: 'center',
-    paddingVertical: 5,
+    padding: 5,
+    width: DEVICE_WIDTH / 7,
     color: '#cccccc'
   },
   weekRow: {
@@ -83,10 +88,9 @@ module.exports = React.StyleSheet.create({
     backgroundColor: 'red',
   },
   currentDayText: {
-    color: 'red',
   },
   selectedDayCircle: {
-    backgroundColor: 'black',
+    backgroundColor: 'transparent',
   },
   selectedDayText: {
     color: 'white',

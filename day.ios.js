@@ -66,6 +66,18 @@ module.exports = React.createClass({
       filler,
     } = this.props
 
+    var dayTextStyle = null;
+    var dayStyle = null;
+
+    if (hasEvent) {
+      dayTextStyle = {
+        color: '#fff'
+      };
+      dayStyle = {
+        backgroundColor: '#1cbbb6'
+      }
+    }
+
     if (filler) {
       return (
         <TouchableWithoutFeedback>
@@ -78,17 +90,8 @@ module.exports = React.createClass({
 
       return (
         <TouchableOpacity onPress={this.props.onPress}>
-          <View style={[styles.dayButton, this.props.customStyle.dayButton]}>
-            <View style={this._dayCircleStyle(isWeekend, isSelected, isToday)}>
-              <Text style={this._dayTextStyle(isWeekend, isSelected, isToday)}>{caption}</Text>
-            </View>
-            {usingEvents &&
-              <View style={[
-                styles.eventIndicatorFiller,
-                this.props.customStyle.eventIndicatorFiller,
-                hasEvent && styles.eventIndicator,
-                hasEvent && this.props.customStyle.eventIndicator]} />
-            }
+          <View style={[styles.dayButton, this.props.customStyle.dayButton, dayStyle]}>
+              <Text style={this._dayTextStyle(isWeekend, isSelected, isToday), dayTextStyle}>{caption}</Text>
           </View>
         </TouchableOpacity>
       )

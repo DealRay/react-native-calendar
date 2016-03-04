@@ -13,7 +13,7 @@ const {
 } = React
 
 const
-  DEVICE_WIDTH = Dimensions.get('window').width,
+  DEVICE_WIDTH = 250,
   VIEW_INDEX = 2
 
 function prepareEventDates(eventDates) {

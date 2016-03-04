@@ -2,7 +2,7 @@
   "name": "react-native-calendar",
   "version": "0.6.2",
   "description": "Simple Calendar Component for React Native",
-  "main": "CalendarIOS.js",
+  "main": "calendar.ios.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:christopherdro/react-native-calendar.git"
@@ -11,7 +11,9 @@
     "eslint": "eslint ."
   },
   "files": [
-    "CalendarIOS.js",
+    "calendar.ios.js",
+    "day.ios.js",
+    "styles.ios.js",
     "README.md"
   ],
   "author": "Christopher Dro <casheghian@gmail.com> (https://github.com/christopherdro)",
