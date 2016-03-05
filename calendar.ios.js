@@ -1,5 +1,4 @@
 const React = require('react-native')
-const PropTypes = require('ReactPropTypes')
 const moment = require('moment')
 const Day = require('./day')
 const styles = require('./styles')
@@ -9,7 +8,8 @@ const {
   ScrollView,
   Text,
   TouchableOpacity,
-  View
+  View,
+  PropTypes
 } = React
 
 const
