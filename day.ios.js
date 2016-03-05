@@ -1,12 +1,12 @@
 const React = require('react-native')
-const PropTypes = require('ReactPropTypes')
 const styles = require('./styles')
 
 const {
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
-  View
+  View,
+  PropTypes
 } = React
 
 module.exports = React.createClass({
