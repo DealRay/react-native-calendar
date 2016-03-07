@@ -47,7 +47,6 @@ module.exports = React.StyleSheet.create({
     textAlign: 'center',
     padding: 5,
     width: DEVICE_WIDTH / 7,
-    color: '#cccccc'
   },
   weekRow: {
     flexDirection: 'row',
