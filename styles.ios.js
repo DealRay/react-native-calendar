@@ -1,5 +1,5 @@
 const React = require('react-native')
-const DEVICE_WIDTH = 252
+const DEVICE_WIDTH = 203
 
 
 module.exports = React.StyleSheet.create({
