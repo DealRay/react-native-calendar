@@ -1,8 +1,12 @@
 import React from 'react';
 const DEVICE_WIDTH = 252
 
+import {
+    StyleSheet,
+} from 'react-native';
 
-module.exports = React.StyleSheet.create({
+
+module.exports = StyleSheet.create({
   calendarContainer: {
     backgroundColor: '#fff',
     width: DEVICE_WIDTH,
