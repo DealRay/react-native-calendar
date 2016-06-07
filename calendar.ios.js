@@ -1,16 +1,16 @@
-const React = require('react-native')
+import React from 'react';
 const moment = require('moment')
 const Day = require('./day')
 const styles = require('./styles')
 
-const {
+import {
   Dimensions,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
   PropTypes
-} = React
+} from 'react-native';
 
 const
   DEVICE_WIDTH = 252,

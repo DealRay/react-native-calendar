@@ -1,4 +1,4 @@
-const React = require('react-native')
+import React from 'react';
 const DEVICE_WIDTH = 252
 
 

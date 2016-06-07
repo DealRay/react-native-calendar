@@ -1,13 +1,13 @@
-const React = require('react-native')
+import React from 'react';
 const styles = require('./styles')
 
-const {
+import {
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
   View,
   PropTypes
-} = React
+} from 'react-native';
 
 module.exports = React.createClass({
 
