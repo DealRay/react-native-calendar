@@ -2,11 +2,14 @@ import React from 'react';
 const styles = require('./styles')
 
 import {
+    PropTypes
+} from 'react'
+
+import {
   Text,
   TouchableOpacity,
   TouchableWithoutFeedback,
-  View,
-  PropTypes
+  View
 } from 'react-native';
 
 module.exports = React.createClass({

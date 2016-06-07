@@ -4,12 +4,15 @@ const Day = require('./day')
 const styles = require('./styles')
 
 import {
+  PropTypes
+} from 'react'
+
+import {
   Dimensions,
   ScrollView,
   Text,
   TouchableOpacity,
-  View,
-  PropTypes
+  View
 } from 'react-native';
 
 const
