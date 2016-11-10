@@ -110,7 +110,6 @@ const Calendar = React.createClass({
           <Text style={[styles.title, this.props.customStyle.title]}>
             {localizedMonth} {this.state.currentMonthMoment.year()}
           </Text>
-          </TouchableOpacity>
         </View>
       )
     } else {
