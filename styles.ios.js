@@ -18,7 +18,8 @@ module.exports = StyleSheet.create({
   calendarControls: {
     flex: 1,
     flexDirection: 'row',
-    width: DEVICE_WIDTH
+    width: DEVICE_WIDTH,
+    height: 20,
     // margin: 10,
   },
   controlButton: {
@@ -32,6 +33,7 @@ module.exports = StyleSheet.create({
     textAlign: 'center',
     fontSize: 15,
     margin: 5,
+    height: 20,
   },
   calendarHeading: {
     flexDirection: 'row',
