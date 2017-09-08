@@ -83,20 +83,20 @@ module.exports = React.createClass({
 
     if (filler) {
       return (
-        <TouchableWithoutFeedback>
+        //<TouchableWithoutFeedback>
           <View style={[styles.dayButtonFiller, this.props.customStyle.dayButtonFiller]}>
             <Text style={[styles.day, this.props.customStyle.day]} />
           </View>
-        </TouchableWithoutFeedback>
+        //</TouchableWithoutFeedback>
       )
     } else {
 
       return (
-        <TouchableOpacity onPress={this.props.onPress}>
+        //<TouchableOpacity onPress={this.props.onPress}>
           <View style={[styles.dayButton, this.props.customStyle.dayButton, dayStyle]}>
               <Text style={this._dayTextStyle(isWeekend, isSelected, isToday), dayTextStyle}>{caption}</Text>
           </View>
-        </TouchableOpacity>
+        //</TouchableOpacity>
       )
     }
   }
